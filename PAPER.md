@@ -32,12 +32,12 @@ The core of NPP is local memory management (e.g., Knowledge Graphs based on inte
 2. **Statistical Pruning:** If the utility probability of a data point falls below a critical threshold, the system applies pruning: the data is excluded from the *context window* sent to the LLM.
 3. **Evolving Quality:** Only information with high predictive value passes the filter, making the graph a noise-free ecosystem that is constantly optimized.
 
-## 3. Analysis and Scientific Method
-The protocol follows the scientific method for performance validation:
-- **Observation:** Contextual noise and prompt entropy degrade accuracy (hallucinations and *Needle In A Haystack* failures).
-- **Hypothesis:** The combined application of NLP patterns (for attention steering) and Bayesian filtering (for dimensional reduction of context) maximizes the Signal-to-Noise Ratio (SNR).
-- **Experimentation:** Using the SLM as a local orchestrator for signal pre-processing before the API call.
-- **Verification:** Isolation of pure logic from contextual noise, resulting in token efficiency and deterministic output stabilization.
+## 3. Modular Experimental Roadmap and Scientific Method
+To rigorously validate the Compound AI System, the experimental phase follows a modular approach (*salami slicing* methodology), isolating individual variables before testing the complete architecture:
+
+- **Phase 1: Attention Steering Isolation.** Testing the SLM exclusively as an NLP-prompt packager without complex memory, measuring the hallucination reduction and vector activation efficiency compared to standard prompts.
+- **Phase 2: Bayesian Dynamic Context Isolation.** Applying statistical pruning to a standard RAG system (without NLP framing) to measure token efficiency, inference acceleration, and SNR maximization.
+- **Phase 3: Synergistic NPP Implementation.** Full deployment of the NPP architecture (NLP + Bayesian Context), hypothesizing that the combination yields results superior to the sum of its individual components.
 
 ## 4. Conclusions
 The **Neuro-Prompting Protocol (NPP)** establishes a new architectural standard in *Compound AI Systems*. The synergistic use of NLP for piloting the latent space and Bayesian computation for purifying the context window guarantees LLM interaction of surgical precision. NPP transforms the language model into a pure logic engine, powered by a dynamic memory that evolves and optimizes autonomously.
